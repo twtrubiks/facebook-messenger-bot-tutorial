@@ -168,7 +168,7 @@ def post_facebook_message(fbid, recevied_message):
         },
         {
             "type": "web_url",
-            "url": "https://petersfancybrownhats.com",
+            "url": "https://github.com/twtrubiks/facebook-messenger-bot-tutorial",
             "title": "如何建立自己的 bot"
         }, {
             "type": "web_url",
