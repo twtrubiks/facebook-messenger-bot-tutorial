@@ -9,10 +9,6 @@ class FbMessageApi:
     def __init__(self, fb_id):
         self.fb_id = fb_id
 
-    def text_message1(self, content):
-        response_msg = json.dumps({"recipient": {"id": self.fb_id}, "message": {"text": content}})
-        requests.post(post_message_url, headers={"Content-Type": "application/json"}, data=response_msg)
-
     def text_message(self, content):
         response_msg = json.dumps({"recipient": {"id": self.fb_id}, "message": {"text": content}})
         requests.post(post_message_url, headers={"Content-Type": "application/json"}, data=response_msg)

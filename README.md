@@ -3,13 +3,12 @@
 
 facebook-messenger-bot-tutorial use Python Django
 
-* [Youtube Tutorial ]()
+* [Youtube Tutorial ](https://youtu.be/6DQ6v1hcNyk)
 
 * [Youtube Demo](https://youtu.be/DzT6mZw3rds)
 
 
 ## 執行畫面
-
 
 ![alt tag](http://i.imgur.com/FS83MG4.jpg)
 
@@ -61,7 +60,7 @@ facebook-messenger-bot-tutorial use Python Django
 
 接著把 [fb_setting.py](https://github.com/twtrubiks/facebook-messenger-bot-tutorial/blob/master/mybot/fb_setting.py) 裡面的內容改成自己的，如下
 
-ACCESS_TOKEN 就是你的 token
+ACCESS_TOKEN 就是你的 token  (權杖)
 
 VERIFY_TOKEN 可以隨便打
 
@@ -70,15 +69,15 @@ ACCESS_TOKEN = "xxxx"
 
 VERIFY_TOKEN = "1234567890"
 ```
-接著將程式執行起來。
+接著先將程式執行起來。
 
 ### 如何使用 ngrok
 
-接著請去下載 [ngrok](https://ngrok.com/) ，免安裝版本，解壓縮即可使用，
+請去下載 [ngrok](https://ngrok.com/) ，免安裝版本，解壓縮即可使用，
 
-是什麼呢?  簡單說，就是讓自己的內網( 也就是 localhost) 可以讓別人看的到，
+是什麼呢?  簡單說，就是讓自己的內網 ( 也就是 localhost) 可以讓別人看的到，
 
-好處是什麼呢?  我們可以在本機測試自己的bot
+好處是什麼呢?  讓我們可以在本機測試自己的 bot
 
 那該如何使用
 
@@ -111,25 +110,25 @@ ngrok http 8000
 
 ![alt tag](http://i.imgur.com/CNEQAab.jpg)
 
-如果沒顯示 200 OK，請在查查看哪裡錯誤了
+如果沒顯示 200 OK，請再查查看哪裡錯誤了，
 
-也可以檢查是不是忘記訂閱 Webhooks 了
+檢查是不是忘記訂閱 Webhooks 了
 
 ![alt tag](http://i.imgur.com/3mE60G1.jpg)
 
 
 ### 佈署
-目前沒有部屬，因為 FACEBOOK 審核我覺得有點麻煩，所以就沒有佈署了。
-
-如果有審核經驗的人，可以分享一下，我會在把教學補上，謝謝。
-
+目前沒有部屬，因為 FACEBOOK 審核我覺得有點麻煩，所以就暫時沒有佈署了。
 
 
 ## 其他補充
 
+* 目前僅有本機測試 ( 未部屬 heroku 以及 通過 FB 的審核)，直接密粉絲團 bot 不會有反應。
+
 * 只要有使用到網址，請記得一定都要用 <b> https </b>。
 
 * [ngrok](https://ngrok.com/) 如果重開，網址會改變，需要重新設定你的 Webhooks。 ( 設定完之後，有時候會慢一點才會有反應)
+
 
 
 ## 執行環境
