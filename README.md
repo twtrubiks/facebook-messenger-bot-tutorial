@@ -70,6 +70,7 @@ ACCESS_TOKEN = "xxxx"
 
 VERIFY_TOKEN = "1234567890"
 ```
+接著將程式執行起來。
 
 ### 如何使用 ngrok
 
